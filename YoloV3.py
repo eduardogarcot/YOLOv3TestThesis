@@ -100,7 +100,7 @@ if __name__ == '__main__':
 
     # Get the output layer names of the model
     layer_names = net.getLayerNames()
-    layer_names = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
+    layer_names = [layer_names[i - 1] for i in net.getUnconnectedOutLayers()]
 
     def Increment_test_Image_Path(oldName): 
         lastName=oldName
